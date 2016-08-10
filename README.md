@@ -1,5 +1,5 @@
 # Pontoon Enhanced
-This is an add-on for Firefox that adds somefeatures that Pontoon is currently missing until they are covered by the core team.
+This is an add-on for Firefox that adds some features that Pontoon is currently missing until they are covered by the core team.
 
 ## What Hacks are Included?
 Currently there is only one.
