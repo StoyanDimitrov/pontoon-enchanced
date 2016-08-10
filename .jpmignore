@@ -1,0 +1,5 @@
+*.cmd
+*.sh
+*.xpi
+.jpmignore
+TODO.*
