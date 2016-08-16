@@ -10,4 +10,4 @@ It adds the number of the currently loaded entities after the magnifier glass in
 **Note:** This number is only of the *currently loaded in the scrollback* items and **not** *all available by the currently applied filter* if any filters are applied.
 
 ## Install
-The signed add-on file can be [downloaded here](pontoon-enchanced/blob/bin/pontoon_enhanced-0.0.2-fx.xpi).
+The signed add-on file can be [downloaded here](https://github.com/StoyanDimitrov/pontoon-enchanced/raw/bin/pontoon_enhanced-0.0.2-fx.xpi).
