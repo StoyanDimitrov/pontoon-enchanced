@@ -1,6 +1,6 @@
 function countItems()
 {
-  var selector = '#entitylist > div:nth-child(1) > div:nth-child(1)'
+  let selector = '#entitylist > div:nth-child(1) > div:nth-child(1)'
     , magnifier = document.querySelector(selector)
     , uneditablesCount = Array.from(document.querySelectorAll('.uneditables li')).length
     , editablesCount = Array.from(document.querySelectorAll('.editables li')).length
@@ -8,7 +8,7 @@ function countItems()
   magnifier.textContent = ' ' + (uneditablesCount + editablesCount)
 }
 
-var uneditables = document.getElementsByClassName('uneditables').item(0)
+let uneditables = document.getElementsByClassName('uneditables').item(0)
   , editables = document.getElementsByClassName('editables').item(0)
   , config = {
       childList: true,
@@ -23,4 +23,5 @@ var uneditables = document.getElementsByClassName('uneditables').item(0)
 
 observer.observe(uneditables, config)
 observer.observe(editables, config)
-countItems();
+
+countItems()

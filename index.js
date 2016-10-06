@@ -4,8 +4,10 @@ exports.main = function() {
 
   let mod = pageMod.PageMod({
     include: ['*.pontoon.mozilla.org'],
-    contentScriptFile: './items-count.js',
-    contentScriptWhen: 'ready',
+    contentScriptFile: [
+        './items-count.js',
+        './select-single-word-on-focus.js',
+      ],
     attachTo: ['existing', 'top'],
   })
 }
