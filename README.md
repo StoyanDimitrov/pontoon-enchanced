@@ -15,4 +15,4 @@ This selects (on focus and click) the content of the text field if there is a st
 **Note:** Does not react to jQ focus event so it does not select the initial value when selected from the list.
 
 ## Install
-The signed add-on file can be [downloaded here](https://github.com/StoyanDimitrov/pontoon-enchanced/raw/bin/pontoon_enhanced-0.0.3-fx.xpi).
+The signed add-on file can be [downloaded here](https://github.com/StoyanDimitrov/pontoon-enchanced/raw/bin/pontoon_enhanced-0.0.4-fx.xpi).
