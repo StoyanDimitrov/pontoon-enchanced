@@ -11,9 +11,11 @@ function selectSingleWordTranslations(event)
     return
   }
 
-  event.target.select()
+  // wait jQ to change the content
+  setTimeout(function() {
+    event.target.select()
+  }, 5)
 }
 
-// does not react to jQ focus event
 input.addEventListener('focus', selectSingleWordTranslations, false)
 input.addEventListener('click', selectSingleWordTranslations, false)
