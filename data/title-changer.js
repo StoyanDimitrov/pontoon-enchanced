@@ -1,0 +1,1 @@
+document.querySelector('head title').textContent = document.querySelector('.title.noselect').textContent.trim() + ' – ' + document.querySelector('head title').textContent.trim()
