@@ -17,7 +17,8 @@
         })
       })
 
-  observer.observe(titleHolder, config)
-
-  changeTitle(titleHolder)
+  if (titleHolder) {
+    observer.observe(titleHolder, config)
+    changeTitle(titleHolder)
+  }
 })()

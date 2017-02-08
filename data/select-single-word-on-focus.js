@@ -18,6 +18,8 @@
     }, 5)
   }
 
-  input.addEventListener('focus', selectSingleWordTranslations, false)
-  input.addEventListener('click', selectSingleWordTranslations, false)
+  if (input) {
+    input.addEventListener('focus', selectSingleWordTranslations, false)
+    input.addEventListener('click', selectSingleWordTranslations, false)
+  }
 })()

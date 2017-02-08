@@ -1,4 +1,4 @@
-(function() {}
+(function() {
   function countItems()
   {
     let selector = '#entitylist > div:nth-child(1) > div:nth-child(1)'
@@ -6,7 +6,9 @@
       , uneditablesCount = Array.from(document.querySelectorAll('.uneditables li')).length
       , editablesCount = Array.from(document.querySelectorAll('.editables li')).length
 
-    magnifier.textContent = ' ' + (uneditablesCount + editablesCount)
+    if (magnifier) {
+      magnifier.textContent = ' ' + (uneditablesCount + editablesCount)
+    }
   }
 
   let uneditables = document.getElementsByClassName('uneditables').item(0)
@@ -22,8 +24,13 @@
         })
       })
 
-  observer.observe(uneditables, config)
-  observer.observe(editables, config)
+  if (uneditables) {
+    observer.observe(uneditables, config)
+  }
+
+  if (editables) {
+    observer.observe(editables, config)
+  }
 
   countItems()
-)()
+})()
