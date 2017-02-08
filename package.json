@@ -2,7 +2,7 @@
   "id": "pontoon-enchanced@stoyan.jetpack",
   "title": "Pontoon Enhanced",
   "name": "pontoon-enchanced",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hacks to Pontoons' UI until it get proper fixes",
   "main": "index.js",
   "author": "stoyan",
