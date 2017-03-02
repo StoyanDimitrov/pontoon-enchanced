@@ -16,4 +16,4 @@ This selects (on focus and click) the content of the text field if there is a st
 Adds the name of the current project to tab title. Convenient if several projects are opened simultaneously.
 
 ## Install
-The signed add-on file can be [downloaded here](https://github.com/StoyanDimitrov/pontoon-enchanced/raw/bin/pontoon_enhanced-0.1.2-fx.xpi).
+The signed add-on file can be [downloaded here](https://github.com/StoyanDimitrov/pontoon-enchanced/raw/bin/pontoon_enhanced-0.1.4-fx.xpi).

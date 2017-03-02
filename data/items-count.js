@@ -6,9 +6,11 @@
       , uneditablesCount = Array.from(document.querySelectorAll('.uneditables li')).length
       , editablesCount = Array.from(document.querySelectorAll('.editables li')).length
 
-    if (magnifier) {
-      magnifier.textContent = ' ' + (uneditablesCount + editablesCount)
+    if (! magnifier) {
+      return
     }
+
+    magnifier.textContent = ` ${uneditablesCount + editablesCount} / ${parseInt(document.querySelector('#progress .menu h2 span').textContent.replace(',', ''), 10)}`
   }
 
   let uneditables = document.getElementsByClassName('uneditables').item(0)
@@ -18,9 +20,11 @@
       }
     , observer = new MutationObserver(function (mutations) {
         mutations.forEach(function (mutation) {
-          if (mutation.type === 'childList') {
-            countItems()
+          if (mutation.type !== 'childList') {
+            return
           }
+
+          countItems()
         })
       })
 
