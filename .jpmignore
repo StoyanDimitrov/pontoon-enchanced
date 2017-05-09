@@ -1,6 +1,0 @@
-.git*
-*.cmd
-*.sh
-*.xpi
-.jpmignore
-TODO.*

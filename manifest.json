@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Pontoon Enhanced",
+  "version": "0.2.1",
+
+  "description": "Hacks to Pontoons' UI until it get proper fixes",
+  "homepage_url": "https://github.com/StoyanDimitrov/pontoon-enchanced",
+
+  "icons": {
+    "48": "icons/48.png",
+    "96": "icons/96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://pontoon.mozilla.org/*"],
+      "js": [
+        "scripts/title-changer.js",
+        "scripts/items-count.js",
+        "scripts/select-single-word-on-focus.js"
+      ]
+    }
+  ]
+}
