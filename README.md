@@ -10,7 +10,7 @@ It adds the number of the currently loaded entities after the magnifier glass in
 **Note:** This number is only of the *currently loaded in the scroll-back* items and **not** *all available by the currently applied filter* if any filters are applied.
 
 ### Select Single Word Translations
-This selects (on focus and click) the content of the text field if there is a string of characters without space in between them.
+This selects (on focus) the content of the text field if there is a string of characters without space in between them.
 
 ### Name of the Current Project in the Tab
 Adds the name of the current project to tab title. Convenient if several projects are opened simultaneously.
