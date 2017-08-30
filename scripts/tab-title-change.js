@@ -1,10 +1,7 @@
 (function() {
-  function changeTitle(titleElement)
-  {
-    document.querySelector('head title').textContent = titleElement.textContent.trim()
-  }
+  'use strict'
 
-  let titleHolder = document.querySelector('.title.noselect')
+  const titleHolder = document.querySelector('.title.noselect')
 
     , config = {
         childList: true,
@@ -20,5 +17,10 @@
   if (titleHolder) {
     observer.observe(titleHolder, config)
     changeTitle(titleHolder)
+  }
+
+  function changeTitle(titleElement)
+  {
+    document.querySelector('head title').textContent = titleElement.textContent.trim()
   }
 })()

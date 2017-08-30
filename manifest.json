@@ -1,22 +1,17 @@
 {
   "manifest_version": 2,
   "name": "Pontoon Enhanced",
-  "version": "0.2.1",
+  "version": "0.2.2",
 
   "description": "Hacks to Pontoons' UI until it get proper fixes",
-  "homepage_url": "https://github.com/StoyanDimitrov/pontoon-enchanced",
-
-  "icons": {
-    "48": "icons/48.png",
-    "96": "icons/96.png"
-  },
+  "homepage_url": "https://github.com/StoyanDimitrov/pontoon-enhanced",
 
   "content_scripts": [
     {
       "matches": ["*://pontoon.mozilla.org/*"],
       "js": [
-        "scripts/title-changer.js",
-        "scripts/items-count.js",
+        "scripts/tab-title-change.js",
+        "scripts/loaded-strings-number.js",
         "scripts/select-single-word-on-focus.js"
       ]
     }

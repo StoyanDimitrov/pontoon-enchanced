@@ -1,5 +1,5 @@
 # Pontoon Enhanced
-This is an add-on for Firefox that adds some features that Pontoon is currently missing until they are covered by the core team.
+This is a browser extension that adds some features that Pontoon is currently missing until they are covered by the core team.
 
 ## What Hacks are Included?
 Two simple ones. You can read more about them below.
@@ -12,5 +12,5 @@ It adds the number of the currently loaded entities after the magnifier glass in
 ### Select Single Word Translations
 This selects (on focus and click) the content of the text field if there is a string of characters without space in between them.
 
-### Name of the Current Project in the &lt;title&gt;
+### Name of the Current Project in the Tab
 Adds the name of the current project to tab title. Convenient if several projects are opened simultaneously.

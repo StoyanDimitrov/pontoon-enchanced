@@ -1,9 +1,16 @@
 (function() {
-  let input = document.getElementById('translation')
+  'use strict'
+
+  const input = document.getElementById('translation')
+
+  if (input) {
+console.log('focus listened')
+    input.addEventListener('focus', selectSingleWordTranslations, false)
+  }
 
   function selectSingleWordTranslations(event)
   {
-    let value = event.target.value.trim()
+    const value = event.target.value.trim()
 
     // empty or has space inside
     if (value.length === 0
@@ -12,14 +19,9 @@
       return
     }
 
-    // wait jQ to change the content
+    // wait jQ change the content
     setTimeout(function() {
       event.target.select()
     }, 5)
-  }
-
-  if (input) {
-    input.addEventListener('focus', selectSingleWordTranslations, false)
-    input.addEventListener('click', selectSingleWordTranslations, false)
   }
 })()
