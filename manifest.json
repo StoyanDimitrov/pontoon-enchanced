@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pontoon Enhanced",
-  "version": "0.2.2",
+  "version": "0.3.0",
 
   "description": "Hacks to Pontoons' UI until it get proper fixes",
   "homepage_url": "https://github.com/StoyanDimitrov/pontoon-enhanced",
@@ -10,7 +10,7 @@
     {
       "matches": ["*://pontoon.mozilla.org/*"],
       "js": [
-        "scripts/tab-title-change.js",
+        "scripts/avatar-anonimizer.js",
         "scripts/loaded-strings-number.js",
         "scripts/select-single-word-on-focus.js"
       ]

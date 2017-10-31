@@ -6,8 +6,8 @@
     , config = {
         childList: true,
       }
-    , observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
+    , observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
           if (mutation.type !== 'childList') {
             return
           }

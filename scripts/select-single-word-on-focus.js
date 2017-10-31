@@ -4,7 +4,6 @@
   const input = document.getElementById('translation')
 
   if (input) {
-console.log('focus listened')
     input.addEventListener('focus', selectSingleWordTranslations, false)
   }
 
