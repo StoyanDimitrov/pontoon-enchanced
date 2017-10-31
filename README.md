@@ -11,6 +11,3 @@ It adds the number of the currently loaded entities after the magnifier glass in
 
 ### Select Single Word Translations
 This selects (on focus) the content of the text field if there is a string of characters without space in between them.
-
-### Name of the Current Project in the Tab
-Adds the name of the current project to tab title. Convenient if several projects are opened simultaneously.
